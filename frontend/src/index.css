@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Outfit:wght@100..900&family=Poppins:wght@500&display=swap');
+@import "tailwindcss";
+@plugin "daisyui";
+
+body{
+    font-family: 'Outfit', sans-serif;
+    
+}
+.app{
+    width: 90%;
+    margin: auto;
+}
+.header-bg{
+    background: url(./assets/header_img.png) no-repeat;
+    margin: 3px auto;
+    background-size: cover;
+    
+
+}
+.header-content{
+    animation: fadeIn 3s ease-in-out;}
+
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+    
+}
