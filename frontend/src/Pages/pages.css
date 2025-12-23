@@ -1,0 +1,75 @@
+.verify{
+    min-height: 60vh;
+    display: grid;
+}
+
+.spiner{
+    width: 100px;
+    height: 100px;
+    place-self: center;
+    border: 5px solid #bdbdbd;
+    border-radius: 50%;
+    border-top-color: tomato;
+    animation: rotate 1s infinite;
+
+}
+
+@keyframes rotate{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.myorder{
+    margin: 50px 0px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.myorder-order{
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 1fr 1fr  2fr 1fr;
+    align-items: center;
+    gap: 30px;
+    font-size: 14px;
+    padding: 10px 20px;
+    color: #454545;
+    border: 1px solid tomato;
+}
+
+.myorder-order img{
+    width: 50px;
+}
+.myorder-order p span{
+    color: tomato;
+}
+
+.myorder-order p b{
+    font-weight: 500;
+    color: #454545;
+}
+
+button{
+    padding: 12px 0px;
+    background-color: #ffe1e1;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+
+@media (max-width:900px) {
+    .myorder-order{
+        grid-template-columns: 1fr 2fr 1fr;
+        row-gap: 5px;
+        font-size: 12px;
+    }
+    button{
+        font-size: 10px;
+    }
+    
+}

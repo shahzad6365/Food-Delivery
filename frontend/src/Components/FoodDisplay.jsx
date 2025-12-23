@@ -11,7 +11,8 @@ export default function FoodDisplay({category}) {
         <div className='grid grid-cols-1 md:grid-cols-4 mt-3 gap-4 row-gap-3'>
             { food_list.map((item,index)=>{
               if(category==="All" || category===item.category){
-                return(<Fooditem key={index} id={item._id} name={item.name} description={item.description} price={item.price} image={item.image}/>)
+                return(<Fooditem key={index} id={item._id} name={item.name} description={item.description} price={item.price} image={item.
+image}/>)
               }
                 
             })}
